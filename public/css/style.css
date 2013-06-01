@@ -1,0 +1,152 @@
+@charset 'utf-8';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em; 
+    color: #4F474B;
+}
+a:hover, header[role="banner"] a:hover {
+    border-bottom: 1px dotted;
+    color: #D2943F;
+}
+a:active, header[role="banner"] a:active {
+    color: #A69689;
+}
+a.selected {
+    color: #B51009;
+}
+
+#main {
+    position: relative;
+    width: 61.5em;
+    margin: 0 auto;
+}
+
+.list-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header[role="banner"] {
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+}
+header[role="banner"], header[role="banner"] a {
+    color: #84A4AA;
+    font-family: 'Prox', sans-serif;
+}
+
+.ufrj-links {
+    margin-left: 15.375em;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+}
+.ufrj-links li {
+    font-size: 0.75em;
+    line-height: 1.66667em;
+}
+
+.logo, .address {
+    float: left;
+}
+
+.logo {
+    margin-left: 2.5625em;
+    width: 11.53125em;
+}
+.logo img {
+    width: 100%;
+}
+h1 {
+    margin-top: 0.5em;
+}
+
+.address {
+    margin:1em 0 0 7.6875em;
+    width: 20.5em;
+    padding-left: 0.5em;
+    border-left: 1px dotted;
+}
+.address h5 {
+    margin: 1em 0 0 0;
+}
+.address p {
+    font-size: 0.8125em;
+    line-height: 1.55em;
+    margin: 0 0 1em 0;
+}
+
+/* ==========================================================================
+   Navigation Sidebar
+   ========================================================================== */
+
+aside[role="navigation"] {
+    float: left;
+    width: 10.25em;
+    padding-left: 0.5em;
+    padding-right: 3.84375em;
+    font-family: 'Prox', sans-serif;
+    text-transform: uppercase;
+}
+aside[role="navigation"] > nav, aside[role="navigation"] .login {
+    border-top: 1px dotted #A69689;
+    padding-top: 1.23077em;
+}
+aside[role="navigation"] .login {
+    margin-top: 10em;
+}
+aside[role="navigation"] .login a {
+    color: #84A4AA;
+}
+aside[role="navigation"] ul {
+    padding: 0;
+    margin: 0
+}
+aside[role="navigation"] li {
+    font-size: 0.8125em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+#page {
+    float:left;
+    width: 51.25em;
+}
+.back {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 0.6875em;
+    line-height: 1.4em;
+}
+h2 {
+    font-size: 1.125em;
+    line-height: 1.45em;
+    text-transform: uppercase;
+    color: #4F474B;
+}
+
+/* ==========================================================================
+   Single pubs
+   ========================================================================== */
+.single-pubs article {
+    width: 46.125em;
+    padding: 2.5em 0.5em;
+}

@@ -1,0 +1,120 @@
+%!Adobe-FontList 1.14
+%Locale:0x416
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+FullName:Arial
+MenuName:Arial
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\arial.ttf
+DataFormat:sfntData
+FileLength:778552
+FileModTime:1305066845
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Georgia
+FamilyName:Georgia
+StyleName:Regular
+FullName:Georgia
+MenuName:Georgia
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\georgia.ttf
+DataFormat:sfntData
+FileLength:157080
+FileModTime:1244666621
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Georgia-Italic
+FamilyName:Georgia
+StyleName:Italic
+FullName:Georgia Italic
+MenuName:Georgia
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\georgiai.ttf
+DataFormat:sfntData
+FileLength:162380
+FileModTime:1244666621
+WeightClass:400
+WidthClass:5
+AngleClass:1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:217280
+FileModTime:1329314026
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tahoma
+FamilyName:Tahoma
+StyleName:Regular
+FullName:Tahoma
+MenuName:Tahoma
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\tahoma.ttf
+DataFormat:sfntData
+FileLength:700180
+FileModTime:1305066845
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Tahoma-Bold
+FamilyName:Tahoma
+StyleName:Bold
+FullName:Tahoma Bold
+MenuName:Tahoma
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\xampp\htdocs\dev\lvm.dev\project\Document fonts\tahomabd.ttf
+DataFormat:sfntData
+FileLength:648008
+FileModTime:1295217124
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
