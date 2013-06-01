@@ -122,7 +122,24 @@ aside[role="navigation"] li {
     font-weight: bold;
     margin-bottom: 1em;
 }
-
+#footer {
+    font-family: "Crete Round", Georgia, Times, "Times New Roman", serif;
+    font-size: 0.625em;
+    font-style: italic;
+    padding-top: 4em;
+    position: absolute;
+    right: 0;
+}
+#footer a {
+    color: #84A4AA;
+}
+#footer {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
 /* ==========================================================================
    Page
    ========================================================================== */
@@ -136,11 +153,51 @@ aside[role="navigation"] li {
     font-size: 0.6875em;
     line-height: 1.4em;
 }
-h2 {
+h3, article > h2 {
     font-size: 1.125em;
     line-height: 1.45em;
     text-transform: uppercase;
     color: #4F474B;
+}
+.info {
+    border-top: 1px solid #E9E9E9;
+    padding: 1em 0;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    border-bottom: 1em;
+}
+.info h3 {
+    margin-top: 0;
+}
+.info h5 {
+    float: left;
+    margin: 0;
+    color: #84A4AA;
+    font-size: 0.9375em;
+    font-weight: normal;
+    line-height: 1.6em;
+}
+.info > ul, .info > div {
+    width: 40.5em;
+    float: right;
+}
+.extra-data {
+    font-family: 'Prox';
+}
+.extra-data .msg {
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 2.15em;
+    text-transform: uppercase;
+    color: #A69689;
+}
+
+/* ==========================================================================
+   Page background
+   ========================================================================== */
+.svg .single-pubs #page {
+    background-image: url(/img/cadeia-dna.svg);
+    background-repeat: no-repeat;
+    padding-top: 2.75em;
 }
 
 /* ==========================================================================
@@ -148,5 +205,17 @@ h2 {
    ========================================================================== */
 .single-pubs article {
     width: 46.125em;
-    padding: 2.5em 0.5em;
+    padding: 0.5em 0.5em 2.5em 0.5em;
+}
+
+.single-pubs .authors {
+    font-size: 'Prox', sans-serif;
+}
+.single-pubs .info h3{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.single-pubs .info p {
+    font-size: 0.9375em;
+    line-height: 1.6em;
 }
