@@ -9,8 +9,7 @@
 
 a {
     text-decoration: none;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em; 
+    padding: 0.1em;
     color: #4F474B;
 }
 a:hover, header[role="banner"] a:hover {
@@ -23,14 +22,12 @@ a:active, header[role="banner"] a:active {
 a.selected {
     color: #B51009;
 }
-
 #main {
     position: relative;
     width: 61.5em;
     margin: 0 auto;
 }
-
-.list-links {
+.list-links, .authors {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -70,7 +67,7 @@ header[role="banner"], header[role="banner"] a {
     width: 11.53125em;
 }
 .logo img {
-    width: 100%;
+    max-width: 100%;
 }
 h1 {
     margin-top: 0.5em;
@@ -108,7 +105,7 @@ aside[role="navigation"] > nav, aside[role="navigation"] .login {
     padding-top: 1.23077em;
 }
 aside[role="navigation"] .login {
-    margin-top: 10em;
+    margin-top: 6.6em;
 }
 aside[role="navigation"] .login a {
     color: #84A4AA;
@@ -143,6 +140,7 @@ aside[role="navigation"] li {
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 /* ==========================================================================
    Page
    ========================================================================== */
@@ -174,9 +172,13 @@ article > h2 {
 h3 {
     font-family: 'Prox', sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9375em;
     line-height: 1.4em;
-    color: #4F474B;
+    color: #1F4482;
+    margin: 1em 0 0.25em;
+}
+h3 + p {
+    margin-top: 0.4em;
 }
 .info {
     border-top: 1px solid #E9E9E9;
@@ -200,7 +202,9 @@ h3 {
     float: right;
 }
 .extra-data {
-    font-family: 'Prox';
+    font-family: 'Prox', sans-serif;
+    padding-bottom: 1em;
+    margin-top: -0.5em;
 }
 .extra-data .msg {
     font-size: 0.75em;
@@ -209,67 +213,26 @@ h3 {
     text-transform: uppercase;
     color: #A69689;
 }
-
-/* ==========================================================================
-   Page customs
-   ========================================================================== */
-.single-pubs #page, .archive-pubs #page {
-    padding-top: 3.5em;
-}
-
-.single-pubs #page, .archive-pubs #page {
-    background-image: url(/img/cadeia-dna.png);
-    background-repeat: no-repeat;
-}
-.svg .single-pubs #page, .svg .archive-pubs #page {
-    background-image: url(/img/cadeia-dna.svg);
-}
-
-
-/* ==========================================================================
-   Single pubs
-   ========================================================================== */
-.single-pubs article {
-    width: 46.125em;
-    padding: 0.5em 0 2.5em 0;
-}
-
-.single-pubs .authors {
-    font-family: 'Prox', sans-serif;
-}
-.single-pubs .info h3{
-    font-size: 1em;
-    line-height: 1.5em;
-}
-.single-pubs .info p {
-    font-size: 0.9375em;
-    line-height: 1.6em;
-}
-
-
-/* ==========================================================================
-   Archive pubs
-   ========================================================================== */
-.archive-pubs .search {
-    margin-top: -2.7em;
-    margin-right: 7em;
-}
-.archive-pubs .filters, .archive-pubs .content {
-    padding-top: 2em;
-}
 .filters {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
-    width: 10em;
-    padding-right: 2.5em;
+    width: 7.5em;
     float: left;
 }
 .filters h6 {
     color: #84A4AA;
     font-family: 'Prox', sans-serif;
     font-weight: normal;
-    font-size: 0.8125em;
+    font-size: 0.8em;
+    line-height: 1.2em;
     text-transform: uppercase;
     margin: 0 0 1em;
+}
+.filters ul {
+    margin-bottom: 2em;
+}
+.filters li {
+    font-size: 0.75em;
+    margin-bottom: 1.0em;
 }
 .content {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -284,6 +247,67 @@ h3 {
     text-transform: uppercase;
     margin: 0 0 1em;
 }
+
+.text {
+    font-size: 0.875em;
+    line-height: 1.4em;
+}
+.text h3 {
+    font-size: 1.2em;
+}
+
+/* ==========================================================================
+   Page customs
+   ========================================================================== */
+.single-pubs #page, .archive-pubs #page, .archive-news #page {
+    padding-top: 3.5em;
+    padding-bottom: 1em;
+}
+
+.single-pubs #page, .archive-pubs #page, .archive-news #page {
+    background-image: url(/img/cadeia-dna.png);
+    background-repeat: no-repeat;
+}
+.svg .single-pubs #page, .svg .archive-pubs #page, .svg .archive-news #page {
+    background-image: url(/img/cadeia-dna.svg);
+}
+
+
+/* ==========================================================================
+   Single pubs
+   ========================================================================== */
+.single-pubs article {
+    width: 46.125em;
+    padding: 0.5em 0 2.5em 0;
+}
+.single-pubs .authors li {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    font-size: 0.875em;
+    line-height: 1.6em;
+    margin-bottom: 0.2em;
+}
+
+.single-pubs .text {
+    width: 46.28571428571429em;
+}
+.single-pubs .citacao {
+    font-size: 0.875em;
+}
+
+
+/* ==========================================================================
+   Archive pubs
+   ========================================================================== */
+.archive-pubs .search {
+    margin-top: -2.7em;
+    margin-right: 7em;
+}
+.archive-pubs .filters, .archive-pubs .content {
+    padding-top: 2em;
+}
+
 .archive-pubs .content h3, .archive-pubs .content ul {
     width: 50%;
     float: left;
@@ -291,8 +315,40 @@ h3 {
     border: 0;
     padding: 0;
 }
-.archive-pubs .content ul {
+.archive-pubs ul.authors {
     padding-left: 3em;
+}
+.archive-pubs .authors li {
+    font-size: 0.8125em;
+    line-height: 1.5em;
+    float: left;
+    margin-right: 0.25em;
+}
+.archive-pubs .authors li:after {
+    content: ',';
+}
+.archive-pubs .authors li:last-of-type:after {
+    content: '';
+}
+
+.archive-pubs .content section {
+    border-left: 1px solid #E9E9E9;
+    padding: 0 0 0 1.5em;
+}
+.archive-pubs .content article {
+    /*border-top: 1px solid #E9E9E9;*/
+    border-bottom: 1px solid #E9E9E9;
+    padding: 1.5em 0;
+}
+.archive-pubs .content section article:last-child {
+    border-bottom: none;
+}
+.archive-pubs .content h6 {
+    color: #84A4AA;
+    margin: 0;
+    border-bottom: 1px solid #DAE4E5;
+    border-top: 1px solid #DAE4E5;
+    padding: 0.5em 0;  
 }
 
 /* ==========================================================================
@@ -317,4 +373,36 @@ form.search input[type='search'] {
 form.search button {
     font-weight: bold;
     color: #09262E;
+}
+
+/* ==========================================================================
+   Archive News
+   ========================================================================== */
+.news time {
+    float: left;
+    width: 4.625em;
+    padding-right: 0.5em;
+    font-family: 'Prox', sans-serif;
+    text-transform: uppercase;
+    color: #84A4AA;
+}
+.news time .year {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #4F474B;
+    font-size: 0.75em;
+    display: block;
+}
+.news .content {
+    float: left;
+    width: 35.875em;
+    padding: 0 0.5em;
+}
+.news article {
+    padding: 1em 0;
+    border-top: 1px dotted #84A4AA;
+}
+.news article aside {
+    float: left;
+    width: 9.75em;
+    padding-left: 0.5em;
 }
