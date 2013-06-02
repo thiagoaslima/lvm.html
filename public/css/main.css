@@ -298,3 +298,17 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/* ==========================================================================
+   Twitter Bootstrap
+   ========================================================================== */
+
+.btn {
+    padding: 0.27em 1em;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #A69689;
+    border: 0;
+}

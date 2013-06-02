@@ -22,7 +22,7 @@
         <![endif]-->
         <script src="js/modernizr-2.6.2.min.js"></script>
     </head>
-    <body class="single-pubs">
+    <body class="archive-pubs">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -34,10 +34,12 @@
             
             <div id="page">
                 <h2>Publicações do Laboratório</h2>
-                <input type="search">
+                <form class="search inline clearfix">
+                    <input type="search" results="5"><button class="btn" type="submit">Buscar</button>
+                </form>
                 
                 <div class="filters">
-                    <h6 id="anos">Anos</h6>
+                    <h6 id="anos">Ano da Publicação</h6>
                     <ul for="anos">
                         <li></li>
                         <li></li>
@@ -47,8 +49,8 @@
                         <li></li>
                     </ul>
 
-                    <h6 id="anos">Categorias</h6>
-                    <ul for="anos">
+                    <h6 id="categorias">Categorias</h6>
+                    <ul for="categorias">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -60,10 +62,10 @@
 
                 <div class="content">
                     <h6><strong>2011</strong></h6>
-                    <article>
+                    <article class="clearfix">
                         <h3><a href="single-pubs.html">Phylogenetic nomenclature and evolution of mannose-binding lectin (MBL2) haplotypes)</a></h3>
 
-                        <ul class="authors">
+                        <ul class="list-links">
                             <li><a href="autores/angelica.html">BOLDT, Angelica B.W</a></li>
                             <li></li>
                             <li></li>
