@@ -2,6 +2,12 @@
 
     'use strict';
 
+    (function () {
+        $.get('html-head.html', function (resp) {
+            $('head').prepend(resp);
+        });
+    }());
+
     function _get_element() {
         var args = Array.prototype.slice.call(arguments),
             name = args.shift();

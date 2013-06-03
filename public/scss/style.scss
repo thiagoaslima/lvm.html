@@ -1,0 +1,466 @@
+@charset "utf-8";
+@import "fonts";
+@import "normalize";
+@import "main";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.1em;
+  color: #4F474B;
+
+  &:hover {
+	border-bottom: 1px dotted;
+	color: #D2943F;
+  }
+}
+
+header[role="banner"] a:hover {
+  border-bottom: 1px dotted;
+  color: #D2943F;
+}
+
+a:active, header[role="banner"] a:active {
+  color: #A69689;
+}
+
+a.selected {
+  color: #B51009;
+}
+
+#main {
+  position: relative;
+  width: 61.5em;
+  margin: 0 auto;
+}
+
+.list-links, .authors {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header[role="banner"] {
+  @extend .clearfix;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+  color: #84A4AA;
+  font-family: 'Prox', sans-serif;
+  a {
+	color: #84A4AA;
+	font-family: 'Prox', sans-serif;
+  }
+}
+
+.ufrj-links {
+  @extend .list-links;
+  margin-left: 15.375em;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  li {
+	font-size: 0.75em;
+	line-height: 1.66667em;
+  }
+}
+
+.logo, .address {
+  float: left;
+}
+
+.logo {
+  margin-left: 2.5625em;
+  width: 11.53125em;
+  img { max-width: 100%; }
+  p { @extend .visuallyhidden; }
+  h1 { margin-top: 0.5em; }
+}
+
+.address {
+  margin: 1em 0 0 7.6875em;
+  width: 20.5em;
+  padding-left: 0.5em;
+  border-left: 1px dotted;
+  h5 {
+	margin: 1em 0 0 0;
+  }
+  p {
+	font-size: 0.8125em;
+	line-height: 1.55em;
+	margin: 0 0 1em 0;
+  }
+}
+
+/* ==========================================================================
+   Navigation Sidebar
+   ========================================================================== */
+
+aside[role="navigation"] {
+  float: left;
+  width: 10.25em;
+  padding-left: 0.5em;
+  padding-right: 3.84375em;
+  font-family: 'Prox', sans-serif;
+  text-transform: uppercase;
+  > nav {
+	border-top: 1px dotted #A69689;
+	padding-top: 1.23077em;
+  }
+  .login {
+	border-top: 1px dotted #A69689;
+	padding-top: 1.23077em;
+	margin-top: 6.6em;
+	a {
+	  color: #84A4AA;
+	}
+  }
+  ul {
+	@extend .list-links;
+	padding: 0;
+	margin: 0;
+  }
+  li {
+	font-size: 0.8125em;
+	font-weight: bold;
+	margin-bottom: 1em;
+  }
+}
+
+#footer {
+  font-family: "Crete Round", Georgia, Times, "Times New Roman", serif;
+  font-size: 0.625em;
+  font-style: italic;
+  padding-top: 4em;
+  position: absolute;
+  right: 0;
+  a {
+	color: #84A4AA;
+	&:hover {
+	  color: #B51009;
+	}
+  }
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+#page {
+  float: left;
+  width: 51.25em;
+  padding: 0 0.5em;
+
+  article {
+	@extend .clearfix;
+  }
+}
+
+.back {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.6875em;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-family: 'Prox', sans-serif;
+  color: #A69689;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article > h2 {
+  font-size: 1.125em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Prox', sans-serif;
+  font-weight: bold;
+  font-size: 0.9375em;
+  line-height: 1.4em;
+  color: #1F4482;
+  margin: 1em 0 0.25em;
+  + p {
+	margin-top: 0.4em;
+  }
+}
+
+.info {
+  @extend .clearfix;
+  border-top: 1px solid #E9E9E9;
+  padding: 1em 0;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  border-bottom: 1em;
+  h3 {
+	margin-top: 0;
+  }
+  h5 {
+	float: left;
+	margin: 0;
+	color: #84A4AA;
+	font-size: 0.9375em;
+	font-weight: normal;
+	line-height: 1.6em;
+  }
+  > {
+	ul, div {
+	  width: 40.5em;
+	  float: right;
+	}
+  }
+}
+
+.extra-data {
+  font-family: 'Prox', sans-serif;
+  padding-bottom: 1em;
+  margin-top: -0.5em;
+  .msg {
+	font-size: 0.75em;
+	font-weight: bold;
+	line-height: 2.15em;
+	text-transform: uppercase;
+	color: #A69689;
+  }
+}
+
+.filters {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  width: 7.5em;
+  float: left;
+  h6 {
+	color: #84A4AA;
+	font-family: 'Prox', sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0 0 1em;
+  }
+  ul {
+	@extend .list-links;
+	margin-bottom: 2em;
+  }
+  li {
+	font-size: 0.75em;
+	margin-bottom: 0.8em;
+  }
+}
+
+.content {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  width: 40em;
+  float: left;
+  h6 {
+	color: #84A4AA;
+	font-weight: bold;
+	font-size: 0.8125em;
+	text-transform: uppercase;
+	margin: 0 0 1em;
+  }
+}
+
+.text {
+  font-size: 0.875em;
+  line-height: 1.4em;
+  h3 {
+	font-size: 1.2em;
+  }
+}
+
+/* ==========================================================================
+   Page customs
+   ========================================================================== */
+
+.single-pubs #page, .archive-pubs #page, .archive-news #page {
+  padding-top: 3.5em;
+  padding-bottom: 1em;
+}
+
+.single-pubs #page, .archive-pubs #page, .archive-news #page {
+  background-image: url(/img/cadeia-dna.png);
+  background-repeat: no-repeat;
+}
+
+.svg {
+  .single-pubs #page, .archive-pubs #page, .archive-news #page {
+	background-image: url(/img/cadeia-dna.svg);
+  }
+}
+
+/* ==========================================================================
+   Single pubs
+   ========================================================================== */
+
+.single-pubs {
+  article {
+	width: 46.125em;
+	padding: 0.5em 0 2.5em 0;
+  }
+  .authors li {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+	font-size: 0.875em;
+	line-height: 1.6em;
+	margin-bottom: 0.2em;
+  }
+  .text {
+	width: 46.28571428571429em;
+  }
+  .citacao {
+	font-size: 0.875em;
+  }
+}
+
+/* ==========================================================================
+   Archive pubs
+   ========================================================================== */
+
+.archive-pubs {
+  .search {
+	margin-top: -2.7em;
+	margin-right: 7em;
+  }
+  .filters {
+	padding-top: 2em;
+  }
+  .content {
+	padding-top: 2em;
+	h3, ul {
+	  width: 50%;
+	  float: left;
+	  margin: 0;
+	  border: 0;
+	  padding: 0;
+	}
+  }
+  ul.authors {
+	padding-left: 3em;
+  }
+  .authors li {
+	font-size: 0.8125em;
+	line-height: 1.5em;
+	float: left;
+	margin-right: 0.25em;
+	&:after {
+	  content: ',';
+	}
+	&:last-of-type:after {
+	  content: '';
+	}
+  }
+  .content {
+	section {
+	  border-left: 1px solid #E9E9E9;
+	  padding: 0 0 0 1.5em;
+	}
+	article {
+	  /*border-top: 1px solid #E9E9E9;*/
+	  border-bottom: 1px solid #E9E9E9;
+	  padding: 1.5em 0;
+	}
+	section article:last-child {
+	  border-bottom: none;
+	}
+	h6 {
+	  color: #84A4AA;
+	  margin: 0;
+	  border-bottom: 1px solid #DAE4E5;
+	  border-top: 1px solid #DAE4E5;
+	  padding: 0.5em 0;
+	}
+  }
+}
+
+/* ==========================================================================
+   Search
+   ========================================================================== */
+
+form.search {
+  @extend .clearfix;
+  float: right;
+  font-family: 'Prox', sans-serif;
+  font-size: 0.875em;
+  input, button {
+	font-family: 'Prox', Tahoma, Verdana, Segoe, sans-serif;
+	line-height: 1.4em;
+  }
+  input[type='search'] {
+	border: 1px solid #A69689;
+	color: #1F4482;
+	vertical-align: middle;
+	padding: 0.2em;
+	width: 15.375em;
+  }
+  button {
+	font-weight: bold;
+	color: #09262E;
+  }
+}
+
+/* ==========================================================================
+   Archive News
+   ========================================================================== */
+
+.news {
+  time {
+	float: left;
+	width: 4.625em;
+	padding-right: 0.5em;
+	margin-top: 0.1em;
+	font-family: 'Prox', sans-serif;
+	text-transform: uppercase;
+	color: #84A4AA;
+	.year {
+	  font-family: Georgia, Times, "Times New Roman", serif;
+	  color: #4F474B;
+	  font-size: 0.75em;
+	  line-height: 0.9em;
+	  display: block;
+	}
+  }
+  .content {
+	@extend .text;
+	float: left;
+	width: 41em;
+	padding: 0 0.6em;
+  }
+  article {
+	@extend .clearfix;
+	padding: 1em 0;
+	border-bottom: 1px dotted #84A4AA;
+	aside {
+    font-family: 'Prox', sans-serif;
+	  float: left;
+	  width: 9.75em;
+	  padding-left: 0.5em;
+	  p{
+		  font-size: 0.8125em;
+	  }
+    .label { 
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-size: 0.9em;
+      color: #84A4AA;
+    }
+	}
+  }
+}
