@@ -290,18 +290,22 @@ h3 {
    Page customs
    ========================================================================== */
 
-.single-pubs #page, .archive-pubs #page, .archive-news #page {
+.archive-pubs #page,  
+.news #page,
+.members #page {
   padding-top: 3.5em;
   padding-bottom: 1em;
 }
 
-.single-pubs #page, .archive-pubs #page, .archive-news #page {
+.archive-pubs #page, 
+.news #page,
+.members #page {
   background-image: url(/img/cadeia-dna.png);
   background-repeat: no-repeat;
 }
 
 .svg {
-  .single-pubs #page, .archive-pubs #page, .archive-news #page {
+  .archive-pubs #page, .news #page, .members #page {
 	background-image: url(/img/cadeia-dna.svg);
   }
 }
@@ -449,18 +453,55 @@ form.search {
 	padding: 1em 0;
 	border-bottom: 1px dotted #84A4AA;
 	aside {
-    font-family: 'Prox', sans-serif;
+	font-family: 'Prox', sans-serif;
 	  float: left;
 	  width: 9.75em;
 	  padding-left: 0.5em;
 	  p{
 		  font-size: 0.8125em;
 	  }
-    .label { 
-      font-family: Tahoma, Verdana, Segoe, sans-serif;
-      font-size: 0.9em;
-      color: #84A4AA;
-    }
+	.label { 
+	  font-family: Tahoma, Verdana, Segoe, sans-serif;
+	  font-size: 0.9em;
+	  color: #84A4AA;
+	}
 	}
   }
+}
+
+/* ==========================================================================
+   Membros
+   ========================================================================== */
+
+.members {
+	form.search {
+		font-family: Tahoma, Verdana, Segoe, sans-serif;
+		font-size: 0.8125em;
+    margin-top: -2.7em;
+    margin-right: 7em;
+
+		label[for="members-order"] {
+			color: #84A4AA;
+		}
+
+    #members-order {
+      float: left;
+    }
+
+    label[for="alfabet-order"], label[for="job-order"] {
+      cursor: pointer;
+    }
+
+    input[type="search"] {
+      margin-left: 8em;
+      width: 10em;
+    }
+
+		input[type="radio"] {
+			visibility: hidden; 
+		}
+    input[type="radio"]:checked + label {
+      color: #B51009;
+    }
+	}
 }

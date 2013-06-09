@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head></head>
+    <body class="archive-members members">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="main">
+            <div id="header"></div>
+            <div id="sidebar"></div>
+            
+            <div id="page">
+                <h2>Membros</h2>
+                <form class="search">
+                    <label for="members-order">ordenar por</label>
+                    
+                    <!-- <div id="members-order"> -->
+                        <input type="radio" name="members-order" id="alfabet-order" value="alfabetica">
+                        <label for="alfabet-order">ordem alfabética</label>
+
+                        <input type="radio" name="members-order" id="job-order" value="alfabetica">
+                        <label for="job-order">cargo</label>
+                    <!-- </div> -->
+                    
+                    <input type="search" results="5"><button class="btn" type="submit">Buscar</button>
+                </form>
+                
+                
+            </div>
+
+            <div id="footer">
+                <p>by <a href="http://thlima.com" rel="external">thiago lima</a></p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Scripts section -->
+<!--  
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+-->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/wp.js"></script>
+
+        <script>
+            (function (w, doc, $) {
+                var h = w.helpers;
+                h.get_header();
+                h.get_sidebar();
+                h.get_footer();
+            }(this, this.document, this.jQuery));
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            // g.src='//www.google-analytics.com/ga.js';
+            // s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

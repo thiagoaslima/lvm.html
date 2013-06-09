@@ -3138,32 +3138,36 @@ h3 + p {
 /* ==========================================================================
    Page customs
    ========================================================================== */
-/* line 293, ../scss/style.scss */
-.single-pubs #page, .archive-pubs #page, .archive-news #page {
+/* line 295, ../scss/style.scss */
+.archive-pubs #page,
+.news #page,
+.members #page {
   padding-top: 3.5em;
   padding-bottom: 1em;
 }
 
-/* line 298, ../scss/style.scss */
-.single-pubs #page, .archive-pubs #page, .archive-news #page {
+/* line 302, ../scss/style.scss */
+.archive-pubs #page,
+.news #page,
+.members #page {
   background-image: url(/img/cadeia-dna.png);
   background-repeat: no-repeat;
 }
 
-/* line 304, ../scss/style.scss */
-.svg .single-pubs #page, .svg .archive-pubs #page, .svg .archive-news #page {
+/* line 308, ../scss/style.scss */
+.svg .archive-pubs #page, .svg .news #page, .svg .members #page {
   background-image: url(/img/cadeia-dna.svg);
 }
 
 /* ==========================================================================
    Single pubs
    ========================================================================== */
-/* line 314, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 .single-pubs article {
   width: 46.125em;
   padding: 0.5em 0 2.5em 0;
 }
-/* line 318, ../scss/style.scss */
+/* line 322, ../scss/style.scss */
 .single-pubs .authors li {
   float: left;
   width: 30%;
@@ -3172,11 +3176,11 @@ h3 + p {
   line-height: 1.6em;
   margin-bottom: 0.2em;
 }
-/* line 326, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 .single-pubs .text, .single-pubs .news .content, .news .single-pubs .content {
   width: 46.28571428571429em;
 }
-/* line 329, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 .single-pubs .citacao {
   font-size: 0.875em;
 }
@@ -3184,20 +3188,20 @@ h3 + p {
 /* ==========================================================================
    Archive pubs
    ========================================================================== */
-/* line 339, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 .archive-pubs .search {
   margin-top: -2.7em;
   margin-right: 7em;
 }
-/* line 343, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .archive-pubs .filters {
   padding-top: 2em;
 }
-/* line 346, ../scss/style.scss */
+/* line 350, ../scss/style.scss */
 .archive-pubs .content {
   padding-top: 2em;
 }
-/* line 348, ../scss/style.scss */
+/* line 352, ../scss/style.scss */
 .archive-pubs .content h3, .archive-pubs .content ul {
   width: 50%;
   float: left;
@@ -3205,41 +3209,41 @@ h3 + p {
   border: 0;
   padding: 0;
 }
-/* line 356, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .archive-pubs ul.authors {
   padding-left: 3em;
 }
-/* line 359, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 .archive-pubs .authors li {
   font-size: 0.8125em;
   line-height: 1.5em;
   float: left;
   margin-right: 0.25em;
 }
-/* line 364, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 .archive-pubs .authors li:after {
   content: ',';
 }
-/* line 367, ../scss/style.scss */
+/* line 371, ../scss/style.scss */
 .archive-pubs .authors li:last-of-type:after {
   content: '';
 }
-/* line 372, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .archive-pubs .content section {
   border-left: 1px solid #E9E9E9;
   padding: 0 0 0 1.5em;
 }
-/* line 376, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .archive-pubs .content article {
   /*border-top: 1px solid #E9E9E9;*/
   border-bottom: 1px solid #E9E9E9;
   padding: 1.5em 0;
 }
-/* line 381, ../scss/style.scss */
+/* line 385, ../scss/style.scss */
 .archive-pubs .content section article:last-child {
   border-bottom: none;
 }
-/* line 384, ../scss/style.scss */
+/* line 388, ../scss/style.scss */
 .archive-pubs .content h6 {
   color: #84A4AA;
   margin: 0;
@@ -3251,18 +3255,18 @@ h3 + p {
 /* ==========================================================================
    Search
    ========================================================================== */
-/* line 398, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 form.search {
   float: right;
   font-family: 'Prox', sans-serif;
   font-size: 0.875em;
 }
-/* line 403, ../scss/style.scss */
+/* line 407, ../scss/style.scss */
 form.search input, form.search button {
   font-family: 'Prox', Tahoma, Verdana, Segoe, sans-serif;
   line-height: 1.4em;
 }
-/* line 407, ../scss/style.scss */
+/* line 411, ../scss/style.scss */
 form.search input[type='search'] {
   border: 1px solid #A69689;
   color: #1F4482;
@@ -3270,7 +3274,7 @@ form.search input[type='search'] {
   padding: 0.2em;
   width: 15.375em;
 }
-/* line 414, ../scss/style.scss */
+/* line 418, ../scss/style.scss */
 form.search button {
   font-weight: bold;
   color: #09262E;
@@ -3279,7 +3283,7 @@ form.search button {
 /* ==========================================================================
    Archive News
    ========================================================================== */
-/* line 425, ../scss/style.scss */
+/* line 429, ../scss/style.scss */
 .news time {
   float: left;
   width: 4.625em;
@@ -3289,7 +3293,7 @@ form.search button {
   text-transform: uppercase;
   color: #84A4AA;
 }
-/* line 433, ../scss/style.scss */
+/* line 437, ../scss/style.scss */
 .news time .year {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #4F474B;
@@ -3297,31 +3301,67 @@ form.search button {
   line-height: 0.9em;
   display: block;
 }
-/* line 441, ../scss/style.scss */
+/* line 445, ../scss/style.scss */
 .news .content {
   float: left;
   width: 41em;
   padding: 0 0.6em;
 }
-/* line 447, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 .news article {
   padding: 1em 0;
   border-bottom: 1px dotted #84A4AA;
 }
-/* line 451, ../scss/style.scss */
+/* line 455, ../scss/style.scss */
 .news article aside {
   font-family: 'Prox', sans-serif;
   float: left;
   width: 9.75em;
   padding-left: 0.5em;
 }
-/* line 456, ../scss/style.scss */
+/* line 460, ../scss/style.scss */
 .news article aside p {
   font-size: 0.8125em;
 }
-/* line 459, ../scss/style.scss */
+/* line 463, ../scss/style.scss */
 .news article aside .label {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.9em;
   color: #84A4AA;
+}
+
+/* ==========================================================================
+   Membros
+   ========================================================================== */
+/* line 477, ../scss/style.scss */
+.members form.search {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 0.8125em;
+  margin-top: -2.7em;
+  margin-right: 7em;
+}
+/* line 483, ../scss/style.scss */
+.members form.search label[for="members-order"] {
+  color: #84A4AA;
+}
+/* line 487, ../scss/style.scss */
+.members form.search #members-order {
+  float: left;
+}
+/* line 491, ../scss/style.scss */
+.members form.search label[for="alfabet-order"], .members form.search label[for="job-order"] {
+  cursor: pointer;
+}
+/* line 495, ../scss/style.scss */
+.members form.search input[type="search"] {
+  margin-left: 8em;
+  width: 10em;
+}
+/* line 500, ../scss/style.scss */
+.members form.search input[type="radio"] {
+  visibility: hidden;
+}
+/* line 503, ../scss/style.scss */
+.members form.search input[type="radio"]:checked + label {
+  color: #B51009;
 }
