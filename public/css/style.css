@@ -2682,13 +2682,14 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 /* line 195, ../scss/main.scss */
-.clearfix:before, header[role="banner"]:before, #page article:before, .info:before, form.search:before, .news article:before,
+.clearfix:before, header[role="banner"]:before, #page article:before, .info:before, form.search:before, .news article:before, .members section:before,
 .clearfix:after,
 header[role="banner"]:after,
 #page article:after,
 .info:after,
 form.search:after,
-.news article:after {
+.news article:after,
+.members section:after {
   content: " ";
   /* 1 */
   display: table;
@@ -2696,7 +2697,7 @@ form.search:after,
 }
 
 /* line 200, ../scss/main.scss */
-.clearfix:after, header[role="banner"]:after, #page article:after, .info:after, form.search:after, .news article:after {
+.clearfix:after, header[role="banner"]:after, #page article:after, .info:after, form.search:after, .news article:after, .members section:after {
   clear: both;
 }
 
@@ -2705,7 +2706,7 @@ form.search:after,
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 209, ../scss/main.scss */
-.clearfix, header[role="banner"], #page article, .info, form.search, .news article {
+.clearfix, header[role="banner"], #page article, .info, form.search, .news article, .members section {
   *zoom: 1;
 }
 
@@ -2868,8 +2869,8 @@ a.selected {
 }
 
 /* ==========================================================================
-   Header
-   ========================================================================== */
+	 Header
+	 ========================================================================== */
 /* line 54, ../scss/style.scss */
 header[role="banner"] {
   padding-top: 1em;
@@ -2877,55 +2878,55 @@ header[role="banner"] {
   color: #84A4AA;
   font-family: 'Prox', sans-serif;
 }
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 header[role="banner"] a {
   color: #84A4AA;
   font-family: 'Prox', sans-serif;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .ufrj-links {
   margin-left: 15.375em;
   padding-left: 0.5em;
   text-transform: uppercase;
 }
-/* line 71, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .ufrj-links li {
   font-size: 0.75em;
   line-height: 1.66667em;
 }
 
-/* line 77, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .logo, .address {
   float: left;
 }
 
-/* line 81, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .logo {
   margin-left: 2.5625em;
   width: 11.53125em;
 }
-/* line 84, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .logo img {
   max-width: 100%;
 }
-/* line 86, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .logo h1 {
   margin-top: 0.5em;
 }
 
-/* line 89, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .address {
   margin: 1em 0 0 7.6875em;
   width: 20.5em;
   padding-left: 0.5em;
   border-left: 1px dotted;
 }
-/* line 94, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 .address h5 {
   margin: 1em 0 0 0;
 }
-/* line 97, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .address p {
   font-size: 0.8125em;
   line-height: 1.55em;
@@ -2933,9 +2934,9 @@ header[role="banner"] a {
 }
 
 /* ==========================================================================
-   Navigation Sidebar
-   ========================================================================== */
-/* line 108, ../scss/style.scss */
+	 Navigation Sidebar
+	 ========================================================================== */
+/* line 115, ../scss/style.scss */
 aside[role="navigation"] {
   float: left;
   width: 10.25em;
@@ -2944,34 +2945,34 @@ aside[role="navigation"] {
   font-family: 'Prox', sans-serif;
   text-transform: uppercase;
 }
-/* line 115, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 aside[role="navigation"] > nav {
   border-top: 1px dotted #A69689;
   padding-top: 1.23077em;
 }
-/* line 119, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 aside[role="navigation"] .login {
   border-top: 1px dotted #A69689;
   padding-top: 1.23077em;
   margin-top: 6.6em;
 }
-/* line 123, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 aside[role="navigation"] .login a {
   color: #84A4AA;
 }
-/* line 127, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 aside[role="navigation"] ul {
   padding: 0;
   margin: 0;
 }
-/* line 132, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 aside[role="navigation"] li {
   font-size: 0.8125em;
   font-weight: bold;
   margin-bottom: 1em;
 }
 
-/* line 139, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 #footer {
   font-family: "Crete Round", Georgia, Times, "Times New Roman", serif;
   font-size: 0.625em;
@@ -2985,26 +2986,26 @@ aside[role="navigation"] li {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 146, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 #footer a {
   color: #84A4AA;
 }
-/* line 148, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 #footer a:hover {
   color: #B51009;
 }
 
 /* ==========================================================================
-   Page
-   ========================================================================== */
-/* line 163, ../scss/style.scss */
+	 Page
+	 ========================================================================== */
+/* line 178, ../scss/style.scss */
 #page {
   float: left;
   width: 51.25em;
   padding: 0 0.5em;
 }
 
-/* line 173, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .back {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
@@ -3012,7 +3013,7 @@ aside[role="navigation"] li {
   line-height: 1.4em;
 }
 
-/* line 180, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 h2 {
   font-family: 'Prox', sans-serif;
   color: #A69689;
@@ -3022,14 +3023,14 @@ h2 {
   letter-spacing: 1px;
 }
 
-/* line 189, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 article > h2 {
   font-size: 1.125em;
   line-height: 1.3em;
   text-transform: uppercase;
 }
 
-/* line 195, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 h3 {
   font-family: 'Prox', sans-serif;
   font-weight: bold;
@@ -3038,23 +3039,23 @@ h3 {
   color: #1F4482;
   margin: 1em 0 0.25em;
 }
-/* line 202, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 h3 + p {
   margin-top: 0.4em;
 }
 
-/* line 207, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .info {
   border-top: 1px solid #E9E9E9;
   padding: 1em 0;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   border-bottom: 1em;
 }
-/* line 213, ../scss/style.scss */
+/* line 230, ../scss/style.scss */
 .info h3 {
   margin-top: 0;
 }
-/* line 216, ../scss/style.scss */
+/* line 234, ../scss/style.scss */
 .info h5 {
   float: left;
   margin: 0;
@@ -3063,19 +3064,19 @@ h3 + p {
   font-weight: normal;
   line-height: 1.6em;
 }
-/* line 225, ../scss/style.scss */
+/* line 244, ../scss/style.scss */
 .info > ul, .info > div {
   width: 40.5em;
   float: right;
 }
 
-/* line 232, ../scss/style.scss */
+/* line 251, ../scss/style.scss */
 .extra-data {
   font-family: 'Prox', sans-serif;
   padding-bottom: 1em;
   margin-top: -0.5em;
 }
-/* line 236, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .extra-data .msg {
   font-size: 0.75em;
   font-weight: bold;
@@ -3084,13 +3085,13 @@ h3 + p {
   color: #A69689;
 }
 
-/* line 245, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .filters {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   width: 7.5em;
   float: left;
 }
-/* line 249, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .filters h6 {
   color: #84A4AA;
   font-family: 'Prox', sans-serif;
@@ -3100,23 +3101,23 @@ h3 + p {
   text-transform: uppercase;
   margin: 0 0 1em;
 }
-/* line 258, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .filters ul {
   margin-bottom: 2em;
 }
-/* line 262, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .filters li {
   font-size: 0.75em;
   margin-bottom: 0.8em;
 }
 
-/* line 268, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .content {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   width: 40em;
   float: left;
 }
-/* line 272, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .content h6 {
   color: #84A4AA;
   font-weight: bold;
@@ -3125,20 +3126,20 @@ h3 + p {
   margin: 0 0 1em;
 }
 
-/* line 281, ../scss/style.scss */
+/* line 304, ../scss/style.scss */
 .text, .news .content {
   font-size: 0.875em;
   line-height: 1.4em;
 }
-/* line 284, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .text h3, .news .content h3 {
   font-size: 1.2em;
 }
 
 /* ==========================================================================
-   Page customs
-   ========================================================================== */
-/* line 295, ../scss/style.scss */
+	 Page customs
+	 ========================================================================== */
+/* line 318, ../scss/style.scss */
 .archive-pubs #page,
 .news #page,
 .members #page {
@@ -3146,7 +3147,7 @@ h3 + p {
   padding-bottom: 1em;
 }
 
-/* line 302, ../scss/style.scss */
+/* line 325, ../scss/style.scss */
 .archive-pubs #page,
 .news #page,
 .members #page {
@@ -3154,20 +3155,20 @@ h3 + p {
   background-repeat: no-repeat;
 }
 
-/* line 308, ../scss/style.scss */
+/* line 331, ../scss/style.scss */
 .svg .archive-pubs #page, .svg .news #page, .svg .members #page {
   background-image: url(/img/cadeia-dna.svg);
 }
 
 /* ==========================================================================
-   Single pubs
-   ========================================================================== */
-/* line 318, ../scss/style.scss */
+	 Single pubs
+	 ========================================================================== */
+/* line 342, ../scss/style.scss */
 .single-pubs article {
   width: 46.125em;
   padding: 0.5em 0 2.5em 0;
 }
-/* line 322, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .single-pubs .authors li {
   float: left;
   width: 30%;
@@ -3176,32 +3177,32 @@ h3 + p {
   line-height: 1.6em;
   margin-bottom: 0.2em;
 }
-/* line 330, ../scss/style.scss */
+/* line 356, ../scss/style.scss */
 .single-pubs .text, .single-pubs .news .content, .news .single-pubs .content {
   width: 46.28571428571429em;
 }
-/* line 333, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .single-pubs .citacao {
   font-size: 0.875em;
 }
 
 /* ==========================================================================
-   Archive pubs
-   ========================================================================== */
-/* line 343, ../scss/style.scss */
+	 Archive pubs
+	 ========================================================================== */
+/* line 371, ../scss/style.scss */
 .archive-pubs .search {
   margin-top: -2.7em;
   margin-right: 7em;
 }
-/* line 347, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .archive-pubs .filters {
   padding-top: 2em;
 }
-/* line 350, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .archive-pubs .content {
   padding-top: 2em;
 }
-/* line 352, ../scss/style.scss */
+/* line 383, ../scss/style.scss */
 .archive-pubs .content h3, .archive-pubs .content ul {
   width: 50%;
   float: left;
@@ -3209,41 +3210,41 @@ h3 + p {
   border: 0;
   padding: 0;
 }
-/* line 360, ../scss/style.scss */
+/* line 392, ../scss/style.scss */
 .archive-pubs ul.authors {
   padding-left: 3em;
 }
-/* line 363, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 .archive-pubs .authors li {
   font-size: 0.8125em;
   line-height: 1.5em;
   float: left;
   margin-right: 0.25em;
 }
-/* line 368, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 .archive-pubs .authors li:after {
   content: ',';
 }
-/* line 371, ../scss/style.scss */
+/* line 406, ../scss/style.scss */
 .archive-pubs .authors li:last-of-type:after {
   content: '';
 }
-/* line 376, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 .archive-pubs .content section {
   border-left: 1px solid #E9E9E9;
   padding: 0 0 0 1.5em;
 }
-/* line 380, ../scss/style.scss */
+/* line 417, ../scss/style.scss */
 .archive-pubs .content article {
   /*border-top: 1px solid #E9E9E9;*/
   border-bottom: 1px solid #E9E9E9;
   padding: 1.5em 0;
 }
-/* line 385, ../scss/style.scss */
+/* line 423, ../scss/style.scss */
 .archive-pubs .content section article:last-child {
   border-bottom: none;
 }
-/* line 388, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .archive-pubs .content h6 {
   color: #84A4AA;
   margin: 0;
@@ -3253,20 +3254,20 @@ h3 + p {
 }
 
 /* ==========================================================================
-   Search
-   ========================================================================== */
-/* line 402, ../scss/style.scss */
+	 Search
+	 ========================================================================== */
+/* line 441, ../scss/style.scss */
 form.search {
   float: right;
   font-family: 'Prox', sans-serif;
   font-size: 0.875em;
 }
-/* line 407, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 form.search input, form.search button {
   font-family: 'Prox', Tahoma, Verdana, Segoe, sans-serif;
   line-height: 1.4em;
 }
-/* line 411, ../scss/style.scss */
+/* line 452, ../scss/style.scss */
 form.search input[type='search'] {
   border: 1px solid #A69689;
   color: #1F4482;
@@ -3274,16 +3275,16 @@ form.search input[type='search'] {
   padding: 0.2em;
   width: 15.375em;
 }
-/* line 418, ../scss/style.scss */
+/* line 460, ../scss/style.scss */
 form.search button {
   font-weight: bold;
   color: #09262E;
 }
 
 /* ==========================================================================
-   Archive News
-   ========================================================================== */
-/* line 429, ../scss/style.scss */
+	 Archive News
+	 ========================================================================== */
+/* line 471, ../scss/style.scss */
 .news time {
   float: left;
   width: 4.625em;
@@ -3293,7 +3294,7 @@ form.search button {
   text-transform: uppercase;
   color: #84A4AA;
 }
-/* line 437, ../scss/style.scss */
+/* line 479, ../scss/style.scss */
 .news time .year {
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #4F474B;
@@ -3301,29 +3302,29 @@ form.search button {
   line-height: 0.9em;
   display: block;
 }
-/* line 445, ../scss/style.scss */
+/* line 487, ../scss/style.scss */
 .news .content {
   float: left;
   width: 41em;
   padding: 0 0.6em;
 }
-/* line 451, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 .news article {
   padding: 1em 0;
   border-bottom: 1px dotted #84A4AA;
 }
-/* line 455, ../scss/style.scss */
+/* line 497, ../scss/style.scss */
 .news article aside {
   font-family: 'Prox', sans-serif;
   float: left;
   width: 9.75em;
   padding-left: 0.5em;
 }
-/* line 460, ../scss/style.scss */
+/* line 502, ../scss/style.scss */
 .news article aside p {
   font-size: 0.8125em;
 }
-/* line 463, ../scss/style.scss */
+/* line 505, ../scss/style.scss */
 .news article aside .label {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.9em;
@@ -3331,37 +3332,62 @@ form.search button {
 }
 
 /* ==========================================================================
-   Membros
-   ========================================================================== */
-/* line 477, ../scss/style.scss */
+	 Membros
+	 ========================================================================== */
+/* line 519, ../scss/style.scss */
 .members form.search {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: 0.8125em;
   margin-top: -2.7em;
   margin-right: 7em;
 }
-/* line 483, ../scss/style.scss */
+/* line 525, ../scss/style.scss */
 .members form.search label[for="members-order"] {
   color: #84A4AA;
 }
-/* line 487, ../scss/style.scss */
+/* line 529, ../scss/style.scss */
 .members form.search #members-order {
   float: left;
 }
-/* line 491, ../scss/style.scss */
+/* line 533, ../scss/style.scss */
 .members form.search label[for="alfabet-order"], .members form.search label[for="job-order"] {
   cursor: pointer;
 }
-/* line 495, ../scss/style.scss */
+/* line 537, ../scss/style.scss */
 .members form.search input[type="search"] {
   margin-left: 8em;
   width: 10em;
 }
-/* line 500, ../scss/style.scss */
+/* line 542, ../scss/style.scss */
 .members form.search input[type="radio"] {
   visibility: hidden;
 }
-/* line 503, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 .members form.search input[type="radio"]:checked + label {
   color: #B51009;
+}
+/* line 550, ../scss/style.scss */
+.members h3 {
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  color: #A69689;
+  width: 100%;
+  padding: 1em 0;
+  border-top: 1px solid #eeeeee;
+}
+/* line 559, ../scss/style.scss */
+.members section {
+  width: 100%;
+  padding: 1em 0;
+  border-top: 1px solid #eeeeee;
+}
+/* line 565, ../scss/style.scss */
+.members .cargo {
+  font-family: 'Prox', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #84A4AA;
+  float: left;
+  width: 10.25em;
+  padding: 0 0.5em;
 }
