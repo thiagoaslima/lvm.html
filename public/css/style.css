@@ -3391,3 +3391,31 @@ form.search button {
   width: 10.25em;
   padding: 0 0.5em;
 }
+/* line 575, ../scss/style.scss */
+.members .nomes {
+  float: left;
+  width: 35.875em;
+  cursor: pointer;
+}
+/* line 580, ../scss/style.scss */
+.members .nomes:hover {
+  background-color: #ECF0F1;
+}
+/* line 584, ../scss/style.scss */
+.members .nomes > a {
+  font-family: 'Prox', sans-serif;
+  font-weight: bold;
+  color: #4F474B;
+}
+/* line 590, ../scss/style.scss */
+.members .nomes a {
+  width: 17.9375em;
+  float: left;
+  display: block;
+}
+/* line 596, ../scss/style.scss */
+.members .nomes .email {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: #B51009;
+}

@@ -572,9 +572,35 @@ form.search {
 		padding: 0 0.5em;
 	}
 
-	table {
+	.nomes {
+		float: left;
+		width: 35.875em;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ECF0F1;
+		}
+
+		&>a {
+			font-family: 'Prox', sans-serif;
+			font-weight: bold;
+			color: #4F474B;
+		}
+
+		a {
+			width: 17.9375em;
+			float: left;
+			display: block;
+		}
 		
+		.email {
+			font-family: Georgia, Times, "Times New Roman", serif;
+			font-style: italic;
+			color: #B51009;
+		}
 	}
+
+
 }
 
 .members section {
