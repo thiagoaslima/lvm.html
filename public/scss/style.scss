@@ -569,37 +569,62 @@ form.search {
 		color: #84A4AA;
 		float: left;
 		width: 10.25em;
+		margin: 0;
 		padding: 0 0.5em;
 	}
 
-	.nomes {
-		float: left;
+	table {
 		width: 35.875em;
-		cursor: pointer;
+		margin-left: 10.25em;
+		border-collapse: collapse;
+	}
 
-		&:hover {
+	tr {
+		border-top: 1px dotted #c6c6c6;
+		border-bottom: 1px dotted #c6c6c6;
+
+		&:hover td {
 			background-color: #ECF0F1;
-		}
-
-		&>a {
-			font-family: 'Prox', sans-serif;
-			font-weight: bold;
-			color: #4F474B;
-		}
-
-		a {
-			width: 17.9375em;
-			float: left;
-			display: block;
-		}
-		
-		.email {
-			font-family: Georgia, Times, "Times New Roman", serif;
-			font-style: italic;
-			color: #B51009;
 		}
 	}
 
+	td {
+		cursor: pointer;
+
+		&.no-link {
+			padding: 1em;
+		}
+
+		a {
+			font-family: 'Prox', sans-serif;
+			font-weight: bold;
+			font-size: 0.9375em;
+			width: 100%;
+			height: 100%;
+			display: block;
+
+			&:hover {
+				border: 0;
+			}
+		}
+
+		.nome {
+			padding: 1em;
+		}
+
+		.email {
+			font-family: Georgia, Times, "Times New Roman", serif;
+			font-size: 0.75em;
+			font-style: italic;
+			font-weight: normal;
+			color: #B51009;
+			padding: 1em 0.5em;
+
+			&:hover {
+				color: #D2943F;
+			}
+		}
+	}
 
 }
 

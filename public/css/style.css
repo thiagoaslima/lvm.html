@@ -3389,33 +3389,59 @@ form.search button {
   color: #84A4AA;
   float: left;
   width: 10.25em;
+  margin: 0;
   padding: 0 0.5em;
 }
-/* line 575, ../scss/style.scss */
-.members .nomes {
-  float: left;
+/* line 576, ../scss/style.scss */
+.members table {
   width: 35.875em;
-  cursor: pointer;
+  margin-left: 10.25em;
+  border-collapse: collapse;
 }
-/* line 580, ../scss/style.scss */
-.members .nomes:hover {
+/* line 582, ../scss/style.scss */
+.members tr {
+  border-top: 1px dotted #c6c6c6;
+  border-bottom: 1px dotted #c6c6c6;
+}
+/* line 586, ../scss/style.scss */
+.members tr:hover td {
   background-color: #ECF0F1;
 }
-/* line 584, ../scss/style.scss */
-.members .nomes > a {
+/* line 591, ../scss/style.scss */
+.members td {
+  cursor: pointer;
+}
+/* line 594, ../scss/style.scss */
+.members td.no-link {
+  padding: 1em;
+}
+/* line 598, ../scss/style.scss */
+.members td a {
   font-family: 'Prox', sans-serif;
   font-weight: bold;
-  color: #4F474B;
-}
-/* line 590, ../scss/style.scss */
-.members .nomes a {
-  width: 17.9375em;
-  float: left;
+  font-size: 0.9375em;
+  width: 100%;
+  height: 100%;
   display: block;
 }
-/* line 596, ../scss/style.scss */
-.members .nomes .email {
+/* line 606, ../scss/style.scss */
+.members td a:hover {
+  border: 0;
+}
+/* line 611, ../scss/style.scss */
+.members td .nome {
+  padding: 1em;
+}
+/* line 615, ../scss/style.scss */
+.members td .email {
   font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 0.75em;
   font-style: italic;
+  font-weight: normal;
   color: #B51009;
+  padding: 1em 0.5em;
+}
+/* line 623, ../scss/style.scss */
+.members td .email:hover {
+  color: #D2943F;
 }
